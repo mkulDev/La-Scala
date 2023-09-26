@@ -3,7 +3,7 @@
 La Scala Pizzeria is a web application that showcases the best Italian cuisine in Świdnik. It offers a delightful menu of Italian dishes, including pizza, pasta, salads, and appetizers. This project is built using React and is designed to provide users with an interactive and visually appealing experience.Live Demo: [La Scala Pizzeria](https://la-scala.netlify.app)
 
 
-<img src=./src/assets/images/screen1.jpg width=500px/>
+<img src=./src/assets/images/screen1.png width=500px/>
 <img src=./src/assets/images/screen3.jpg width=500px/>
 <img src=./src/assets/images/screen4.jpg width=500px/>
 
