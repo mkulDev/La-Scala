@@ -1,0 +1,110 @@
+
+@font-face {
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Cormorant_Upright/CormorantUpright-Light.ttf');
+}
+@font-face {
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./assets/fonts/Cormorant_Upright/CormorantUpright-Regular.ttf');
+}
+@font-face {
+  font-family: 'Cormorant Upright';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Cormorant_Upright/CormorantUpright-Bold.ttf');
+}
+@font-face {
+  font-family: 'Open-Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Open_Sans/OpenSans_Condensed-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Open_Sans/OpenSans_Condensed-Bold.ttf');
+}
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Tangerine/Tangerine-Regular.ttf');
+}
+@font-face {
+  font-family: 'Tangerine';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets/fonts/Tangerine/Tangerine-Bold.ttf');
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #dcca87;
+  font-family: 'Cormorant Upright';
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #0a0a0a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  display: inline-block;
+}
+
+.menu-enter {
+  transform: translateY(-100vh);
+ 
+}
+
+.menu-enter-active {
+  transform: translateY(0);
+ 
+  transition: all 1s ease-in-out;
+}
+
+.menu-enter-done {
+  transform: translateY(0);
+
+}
+
+.menu-exit {
+  transform: translateY(0);
+  
+}
+
+.menu-exit-active {
+  transform: translateY(-100vh);
+ 
+  transition: all 1s ease-in-out;
+}
+
+.menu-exit-done {
+  transform: translateY(-100vh);
+ 
+}

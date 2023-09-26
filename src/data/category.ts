@@ -1,0 +1,1 @@
+export const category = ['Pizza', 'Spaghetti i Penne','Przystawki', 'Sałatki']
