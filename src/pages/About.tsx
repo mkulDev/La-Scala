@@ -15,19 +15,13 @@ const About = () => {
           }
         />
       </div>
-      <img
-        src={knife}
-        alt='la-scala'
-        className='h-[60vh] mx-6 hidden md:block'
-      />
+      <img src={knife} alt='la-scala' className='h-[60vh] mx-6 hidden md:block' loading='lazy' />
       <div className='w-[40%] m-6'>
         <Description
           align={'left'}
           title={'Odwiedź'}
           main={'Godziny otwarcia'}
-          body={
-            'Istnieje możliwość telefonicznej rezerwacji stolików\n\nponiedziałek-czwartek 13-22\npiątek - sobota 13-23\nniedziela 15-22'
-          }
+          body={'Istnieje możliwość telefonicznej rezerwacji stolików\n\nponiedziałek-czwartek 13-22\npiątek - sobota 13-23\nniedziela 15-22'}
         />
       </div>
     </div>

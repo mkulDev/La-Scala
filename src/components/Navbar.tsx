@@ -31,35 +31,20 @@ const Navbar = () => {
       <h1 className='text-6xl font-laScala text-primary'>La Scala</h1>
       <ul className='hidden md:flex text-2xl gap-8 justify-self-end'>
         {links.map((element, index) => (
-          <li
-            className='inline-block hover:text-primary transition-colors duration-500'
-            key={index}>
-            <button onClick={() => handleMenu(element.id)}>
-              {element.text}
-            </button>
+          <li className='inline-block hover:text-primary transition-colors duration-500' key={index}>
+            <button onClick={() => handleMenu(element.id)}>{element.text}</button>
           </li>
         ))}
       </ul>
 
-      <GiHamburgerMenu
-        onClick={handleMobileMenu}
-        className=' block md:hidden'
-      />
-      <CSSTransition
-        in={isMenuActive}
-        timeout={1000}
-        classNames='menu'
-        unmountOnExit>
+      <GiHamburgerMenu onClick={handleMobileMenu} className=' block md:hidden' />
+      <CSSTransition in={isMenuActive} timeout={1000} classNames='menu' unmountOnExit>
         <div
           className={`fixed top-0 left-0 w-[100vw] h-[100vh] flex flex-col justify-center items-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]  from-[#272727] to-black "`}>
-          <h2 className='text-6xl  leading-[40px] font-laScala text-primary mb-[30px]'>
-            La Scala
-          </h2>
+          <h2 className='text-6xl  leading-[40px] font-laScala text-primary mb-[30px]'>La Scala</h2>
           <ul className='flex flex-col gap-4 text-[48px] items-center justify-center '>
             {links.map((element, index) => (
-              <li
-                className='inline-block hover:text-primary transition-colors duration-500 text-xl'
-                key={index}>
+              <li className='inline-block hover:text-primary transition-colors duration-500 text-xl' key={index}>
                 <button
                   onClick={() => {
                     handleMenu(element.id)
@@ -70,11 +55,7 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-          <IoIosCloseCircleOutline
-            onClick={handleMobileMenu}
-            size={40}
-            className='absolute top-12 right-12 cursor-pointer hover:text-primary'
-          />
+          <IoIosCloseCircleOutline onClick={handleMobileMenu} size={40} className='absolute top-12 right-12 cursor-pointer hover:text-primary' />
         </div>
       </CSSTransition>
     </nav>

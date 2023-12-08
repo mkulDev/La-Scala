@@ -16,22 +16,14 @@ const Contact = () => {
           align='center'
         />
 
-        <h2 className='text-[20px] lg:text-[50px] mb-1 text-primary font-display text-center'>
-          Godziny otwarcia
-        </h2>
-        <p className='text-sm lg:text-xl whitespace-pre-line text-center font-body text-gray-300'>
-          {
-            'poniedziałek-czwartek 13-22\npiątek - sobota 13-23\nniedziela 15-22'
-          }
-        </p>
+        <h2 className='text-[20px] lg:text-[50px] mb-1 text-primary font-display text-center'>Godziny otwarcia</h2>
+        <p className='text-sm lg:text-xl whitespace-pre-line text-center font-body text-gray-300'>{'poniedziałek-czwartek 13-22\npiątek - sobota 13-23\nniedziela 15-22'}</p>
       </div>
       <div className='w-full lg:w-[60%]'>
         <Zoom>
           <img src={map} alt='la-scala' className='w-full rounded-lg' />
         </Zoom>
-        <p className='text-base lg:text-lg  text-center '>
-          Kliknij na mapę aby powiększyć
-        </p>
+        <p className='text-base lg:text-lg  text-center '>Kliknij na mapę aby powiększyć</p>
       </div>
     </div>
   )
