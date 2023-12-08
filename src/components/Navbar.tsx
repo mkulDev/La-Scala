@@ -21,10 +21,10 @@ const Navbar = () => {
   }
 
   const links = [
-    { text: 'Start', id: 'start' },
+    { text: 'Strona Główna', id: 'start' },
     { text: 'O firmie', id: 'about' },
     { text: 'Menu', id: 'menu' },
-    { text: 'Contact', id: 'Contact' },
+    { text: 'Kontakt', id: 'Contact' },
   ]
   return (
     <nav className='fixed flex justify-between items-center w-full h-[80px] top-0 left-0 text-gray-100 font-display px-12 bg-[#0e0e0e]  border-b-[1px] border-[#2d2919] z-10'>
